@@ -11,7 +11,7 @@ app.use(cookieParser());
 
 const corsOptions = {
     credentials: true, // Allow credentials (cookies) to be sent to/from origin
-    origin: 'http://localhost:5173', // Allow only this origin
+    origin: '*', // Allow only this origin
     methods: 'GET, POST, PUT, PATCH, DELETE', // Allow these methods
 };
 app.use(cors(corsOptions));
